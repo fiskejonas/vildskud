@@ -7,8 +7,15 @@
     <title>Vite App</title>
   </head>
   <body class="">
+    <div class="fixed top-0 h-screen w-screen bg-[#1F2E7A] blur-[70px]">
+      <div
+        class="absolute h-screen w-screen animate-spin-slow bg-center"
+        style="background-image: url(img/bg-shapes-square.svg)"
+      ></div>
+    </div>
+
     <header>
-      <nav class="flex justify-center space-y-10 pt-8 md:justify-end md:pr-20">
+      <nav class="relative flex justify-center space-y-10 pt-8 md:justify-end md:pr-20 ">
         <ul>
           <a
             class="rounded-full bg-white p-3 text-sm text-black"
@@ -29,12 +36,6 @@
       </nav>
     </header>
 
-    <div class="fixed top-0 h-screen w-screen bg-[#1F2E7A] blur-[70px]">
-      <div
-        class="absolute h-screen w-screen animate-spin-slow bg-center"
-        style="background-image: url(img/bg-shapes-square.svg)"
-      ></div>
-    </div>
     <div class="hero_container relative mt-28 flex flex-col place-items-center">
       <div
         class="hero_titel mb-6 flex max-w-xs flex-col place-items-center gap-4"
