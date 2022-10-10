@@ -7,9 +7,11 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-gradient-to-br from-violet-500 to-pink-500">
+  <body>
     <header>
-      <nav class="flex justify-center space-y-10 pt-8 md:justify-end md:pr-20">
+      <nav
+        class="relative z-50 flex justify-center space-y-10 pt-8 md:justify-end md:pr-20"
+      >
         <ul>
           <a
             class="rounded-full border-2 border-white p-3 text-sm text-white hover:bg-white hover:p-3 hover:text-black"
@@ -29,8 +31,14 @@
         </ul>
       </nav>
     </header>
+    <div class="fixed top-0 h-screen w-screen bg-[#1F2E7A] blur-[70px]">
+      <div
+        class="absolute h-screen w-screen animate-spin-slow bg-center"
+        style="background-image: url(img/bg-shapes-square.svg)"
+      ></div>
+    </div>
 
-    <main>
+    <main class="relative">
       <div class="m-20 text-white md:m-40 md:grid md:grid-cols-2">
         <h1 class="pb-10 text-4xl font-bold md:text-5xl">Kom og vær med</h1>
         <p>
@@ -56,7 +64,7 @@
             Budgetplanlægning
           </h3>
           <h3 class="text-5xl hover:text-white md:text-6xl">pr-strategier</h3>
-          <h3 class="md:text-7x text-6xl hover:text-white">Grafisk Design</h3>
+          <h3 class="md:text-7x text-5xl hover:text-white">Grafisk Design</h3>
         </div>
         <div>
           <h3 class="text-4xl hover:text-white md:text-5xl">Udvikling</h3>
@@ -99,7 +107,7 @@
       </div>
     </main>
 
-    <footer class="bg-white">
+    <footer class="relative z-50 bg-white">
       <div
         class="pt-20 text-center md:ml-20 md:mr-20 md:grid md:grid-cols-5 md:text-left"
       >

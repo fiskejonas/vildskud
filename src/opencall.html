@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="bg-gradient-to-br from-violet-500 to-pink-500">
+  <body>
     <header>
-      <nav class="flex justify-center space-y-10 pt-8 md:justify-end md:pr-20">
+      <nav
+        class="relative z-20 flex justify-center space-y-10 pt-8 md:justify-end md:pr-20"
+      >
         <ul>
           <a
             class="rounded-full border-2 border-white p-3 text-sm text-white hover:bg-white hover:p-3 hover:text-black"
@@ -29,32 +31,42 @@
       </nav>
     </header>
 
-    <div>
-      <h1 class="mt-40 text-center text-5xl font-bold text-white">Open Call</h1>
+    <div class="fixed top-0 h-screen w-screen bg-[#1F2E7A] blur-[70px]">
+      <div
+        class="absolute h-screen w-screen animate-spin-slow bg-center"
+        style="background-image: url(img/bg-shapes-square.svg)"
+      ></div>
+    </div>
+    <main class="relative m-20">
+      <div>
+        <h1 class="mt-40 mb-20 text-center text-5xl font-bold text-white">
+          Open Call
+        </h1>
 
-      <div class="text-white md:m-40 md:grid md:grid-cols-2">
-        <h2 class="pb-10 text-4xl font-bold md:text-3xl">
-          VILDSKUD Festival fejrer 20års jubilæum – og DU skal optræde!il du/i
-          være med?
-        </h2>
-        <p>
-          VILDSKUD er en fejring af alle former for upcoming scenekunst. Alt fra
-          klassisk teater, udendørs danseoplevelser, storytelling lysshows,
-          musiske sanseoplevelser – kun fantasien sætter grænser! Den 2.-6.
-          august giver jer spirene scenekunstnere en platform at udfolde og
-          udvikle jeres forestillinger på med mulighed for at vinde lækre
-          priser, få sparring med dygtige dramaturger, vise jeres færdigheder
-          til det professionelle scenekunstlag og anmeldere, samt udvide jeres
-          netværk. Lyder det som noget for dig/jer?
-        </p>
+        <div class="text-white md:m-40 md:grid md:grid-cols-2">
+          <h2 class="pb-10 text-4xl font-bold md:text-3xl">
+            VILDSKUD Festival fejrer 20års jubilæum – og DU skal optræde!il du/i
+            være med?
+          </h2>
+          <p>
+            VILDSKUD er en fejring af alle former for upcoming scenekunst. Alt
+            fra klassisk teater, udendørs danseoplevelser, storytelling
+            lysshows, musiske sanseoplevelser – kun fantasien sætter grænser!
+            Den 2.-6. august giver jer spirene scenekunstnere en platform at
+            udfolde og udvikle jeres forestillinger på med mulighed for at vinde
+            lækre priser, få sparring med dygtige dramaturger, vise jeres
+            færdigheder til det professionelle scenekunstlag og anmeldere, samt
+            udvide jeres netværk. Lyder det som noget for dig/jer?
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="pb-40 text-white">
-      <h2 class="text-3xl font-bold md:ml-40">Hvordan ansøger man?</h2>
-    </div>
+      <div class="pb-40 text-white">
+        <h2 class="mt-20 text-3xl font-bold md:ml-40">Hvordan ansøger man?</h2>
+      </div>
+    </main>
 
-    <footer class="bg-white">
+    <footer class="relative z-20 bg-white">
       <div
         class="pt-20 text-center md:ml-20 md:mr-20 md:grid md:grid-cols-5 md:text-left"
       >
