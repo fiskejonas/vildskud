@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="grid place-items-center p-5">
+    <div class="hero_container mt-28 flex flex-col place-items-center">
+      <div
+        class="hero_titel mb-6 flex max-w-xs flex-col place-items-center gap-4"
+      >
+        <h1 class="text-center text-6xl font-bold text-purple-100">
+          VILDSKUD FESTIVAL
+        </h1>
+        <h2 class="cta w-72 text-center text-2xl font-semibold text-purple-100">
+          GÅ PÅ OPDAGELSE I SCENEKUNSTENS UNDERGRUND
+        </h2>
+        <h4 class="hero_dato font-bold text-slate-800 text-opacity-50">
+          2.-6. august 2022
+        </h4>
+        <h3 class="hero_tekst text-center text-purple-100">
+          VILDSKUD er en fejring af alle former for upcoming scenekunst. Alt fra
+          klassisk teater, udendørs danseoplevelser, storytelling lysshows,
+          musiske sanseoplevelser – kun fantasien sætter grænser!
+        </h3>
+        <div class="flex gap-5">
+          <button
+            class="mt-5 flex w-32 rounded bg-blue-500 py-2 px-4 text-xs font-bold text-white hover:bg-opacity-50"
+          >
+            <a class="cursor-pointer" href="sådan_køber_du.html"
+              >Sådan køber du billet</a
+            >
+          </button>
+          <button
+            class="mt-5 flex w-32 rounded bg-blue-500 py-2 px-4 text-xs font-bold text-white hover:bg-opacity-50"
+          >
+            <a class="cursor-pointer" href="find_vej.html"
+              >Find vej på festivalen</a
+            >
+          </button>
+        </div>
+      </div>
+      <div
+        class="table_container flex flex-col place-items-center overflow-y-scroll rounded-xl bg-purple-400 bg-opacity-30 p-3 shadow-lg"
+      >
+        <table id="myTable" class="table">
+          <tbody>
+            <caption class="hej sticky top-0">
+              <div
+                class="mb-5 flex items-center justify-center gap-5 border-b-2 border-b-slate-900 border-opacity-70 pb-3"
+              >
+                <h2 class="z-30 text-3xl font-bold text-purple-100">PROGRAM</h2>
+                <select
+                  class="flex w-32 cursor-pointer rounded border-none bg-slate-900 bg-opacity-70 text-xl font-bold text-purple-50"
+                  id="dageDropdown"
+                >
+                  <option id="alle_dage">Dato</option>
+                  <option>Tirsdag</option>
+                  <option>Onsdag</option>
+                  <option>Torsdag</option>
+                  <option>Fredag</option>
+                  <option>Lørdag</option>
+                </select>
+              </div>
+            </caption>
+            <!-- Tirsdag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="./img/WFTWT.webp" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  WFTWT
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:00</div>
+                  <div class="text-sm font-semibold">Tirsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Tirsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Astrid & Lotte Forestillingen “What Fires
+                  Together Wires Together” eksperimenterer i spændingsfeltet
+                  mellem dans/bevægelse og naturvidenskab. Den tager
+                  udgangspunkt i psykologen Donald Hebbs teori fra 1949; “What
+                  fires together wires together”, der beskriver hvordan
+                  repetitiv fyring af to nærliggende neuroner øger
+                  effektiviteten af den pågældende neuronale bane. Lidt ligesom
+                  en sti i græsset, der bliver nemmere at betræde jo flere, der
+                  går på den. Alt dette er sat i et identitetsperspektiv, der
+                  sætter spørgsmålstegn ved, hvor fastgroet vores identitet i
+                  virkeligheden er. Medvirkende: Astrid Sten Andersen, Lotte
+                  Bjørnholt Fink, Anton Hvidtjørn og Sidsel Sten Andersen
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <!-- vild med -->
+            <tr class="table_row mb-7 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/vildmed.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Vild med..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:30</div>
+                  <div class="text-sm font-semibold">Tirsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Tirsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af TEATER MANNEQUIN Velkommen! Til et univers i
+                  kærlighedens navn. Vi inviterer dig ind i en intim, musikalsk
+                  og glimtende undersøgelse af selvbilleder, kærlighed og higen
+                  efter at blive set, hørt og rørt. Vi tager dig i hånden og
+                  følger dig trygt igennem vores svar på livets store spørgsmål;
+                  er selvkærlighed løsningen på alle problemer? Havde din
+                  gymnasielærer ret, da hun sagde, du bare skulle stole mere på
+                  dig selv - så vil verden lægge sig for dine fødder?
+                  Medvirkende: Therese Maria Bilfeldt, Matilde Kjær Hilligsøe og
+                  Laura Alhed Nielsen Konsulent: Alberte M. H Jacobsen.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <!-- Onsdag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="./img/WFTWT.webp" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  WFTWT
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">17:30</div>
+                  <div class="text-sm font-semibold">Onsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Onsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Astrid & Lotte Forestillingen “What Fires
+                  Together Wires Together” eksperimenterer i spændingsfeltet
+                  mellem dans/bevægelse og naturvidenskab. Den tager
+                  udgangspunkt i psykologen Donald Hebbs teori fra 1949; “What
+                  fires together wires together”, der beskriver hvordan
+                  repetitiv fyring af to nærliggende neuroner øger
+                  effektiviteten af den pågældende neuronale bane. Lidt ligesom
+                  en sti i græsset, der bliver nemmere at betræde jo flere, der
+                  går på den. Alt dette er sat i et identitetsperspektiv, der
+                  sætter spørgsmålstegn ved, hvor fastgroet vores identitet i
+                  virkeligheden er. Medvirkende: Astrid Sten Andersen, Lotte
+                  Bjørnholt Fink, Anton Hvidtjørn og Sidsel Sten Andersen
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <!-- vild med onsdag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/vildmed.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Vild med..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:10</div>
+                  <div class="text-sm font-semibold">Onsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Onsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af TEATER MANNEQUIN Velkommen! Til et univers i
+                  kærlighedens navn. Vi inviterer dig ind i en intim, musikalsk
+                  og glimtende undersøgelse af selvbilleder, kærlighed og higen
+                  efter at blive set, hørt og rørt. Vi tager dig i hånden og
+                  følger dig trygt igennem vores svar på livets store spørgsmål;
+                  er selvkærlighed løsningen på alle problemer? Havde din
+                  gymnasielærer ret, da hun sagde, du bare skulle stole mere på
+                  dig selv - så vil verden lægge sig for dine fødder?
+                  Medvirkende: Therese Maria Bilfeldt, Matilde Kjær Hilligsøe og
+                  Laura Alhed Nielsen Konsulent: Alberte M. H Jacobsen.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <!-- vild med kl 20 -->
+            <tr class="table_row mb-7 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/vildmed.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Vild med..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">20:00</div>
+                  <div class="text-sm font-semibold">Onsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Onsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af TEATER MANNEQUIN Velkommen! Til et univers i
+                  kærlighedens navn. Vi inviterer dig ind i en intim, musikalsk
+                  og glimtende undersøgelse af selvbilleder, kærlighed og higen
+                  efter at blive set, hørt og rørt. Vi tager dig i hånden og
+                  følger dig trygt igennem vores svar på livets store spørgsmål;
+                  er selvkærlighed løsningen på alle problemer? Havde din
+                  gymnasielærer ret, da hun sagde, du bare skulle stole mere på
+                  dig selv - så vil verden lægge sig for dine fødder?
+                  Medvirkende: Therese Maria Bilfeldt, Matilde Kjær Hilligsøe og
+                  Laura Alhed Nielsen Konsulent: Alberte M. H Jacobsen.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <!-- torsdag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/rebirth.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">15:00</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="./img/gogo.webp" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  GO GO YO-YOKU
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:45</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af KOPFKINO Find din yoyo frem og sæt dig selv
+                  fri i en skov. Det går godt for de tre roomies med at dele
+                  lejlighed, men kæft det går dårligt med at være mennesker i en
+                  nulfejlskultur, hvor alt handler om meritter og
+                  milepælsplaner. Rakel er blevet droppet af sin eks, Lua kommer
+                  bare aldrig videre til prøverne på Skuespillerskolen og Skjold
+                  dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre
+                  for at blive stemplet som fiasko. Ikke flere hvide løgne for
+                  at være bedre end man er. Ikke mere pleaser-pis for at rykke
+                  op i sit selvskabte hierarki. Ud med skam og ind med sandhed.
+                  Med inspiration i Shinrin-Yoku,
+                  anti-happy-go-lucky-mentalitet, vigtige venner og svære
+                  erkendelser tager Teater Kopfkino os med på en komisk
+                  dannelsesrejse midt i bøvlede livsprocesser.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/rebirth.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:15</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/levenderum.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Det levende rum
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:30</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Spræng Danseteater. I ‘Det Levende Rum’
+                  møder vi de mennesker, der er blevet elimineret fra den
+                  utopiske verden ‘New Harmony’. De er alle syndige i at have
+                  brudt ‘New Harmony’s regler og normer for god opførsel. Sat
+                  uden for samfundet opdager de, at de er overladt til dem selv,
+                  at der ingen begrænsninger og konsekvenser er, ved at følge
+                  deres menneskelige drifter. Sproget forsvinder, og fysikken
+                  tager over. Velkommen til den store driftsfest! Medvirkende:
+                  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga
+                  Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt
+                  Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og
+                  DATS - Dansk Amatør Teater & Scenekunst.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="./img/gogo.webp" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  GO GO YO-YOKU
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">20:15</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af KOPFKINO Find din yoyo frem og sæt dig selv
+                  fri i en skov. Det går godt for de tre roomies med at dele
+                  lejlighed, men kæft det går dårligt med at være mennesker i en
+                  nulfejlskultur, hvor alt handler om meritter og
+                  milepælsplaner. Rakel er blevet droppet af sin eks, Lua kommer
+                  bare aldrig videre til prøverne på Skuespillerskolen og Skjold
+                  dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre
+                  for at blive stemplet som fiasko. Ikke flere hvide løgne for
+                  at være bedre end man er. Ikke mere pleaser-pis for at rykke
+                  op i sit selvskabte hierarki. Ud med skam og ind med sandhed.
+                  Med inspiration i Shinrin-Yoku,
+                  anti-happy-go-lucky-mentalitet, vigtige venner og svære
+                  erkendelser tager Teater Kopfkino os med på en komisk
+                  dannelsesrejse midt i bøvlede livsprocesser.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-7 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/rebirth.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">15:00</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <!-- fredag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/rebirth.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">15:00</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="./img/gogo.webp" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  GO GO YO-YOKU
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:30</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af KOPFKINO Find din yoyo frem og sæt dig selv
+                  fri i en skov. Det går godt for de tre roomies med at dele
+                  lejlighed, men kæft det går dårligt med at være mennesker i en
+                  nulfejlskultur, hvor alt handler om meritter og
+                  milepælsplaner. Rakel er blevet droppet af sin eks, Lua kommer
+                  bare aldrig videre til prøverne på Skuespillerskolen og Skjold
+                  dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre
+                  for at blive stemplet som fiasko. Ikke flere hvide løgne for
+                  at være bedre end man er. Ikke mere pleaser-pis for at rykke
+                  op i sit selvskabte hierarki. Ud med skam og ind med sandhed.
+                  Med inspiration i Shinrin-Yoku,
+                  anti-happy-go-lucky-mentalitet, vigtige venner og svære
+                  erkendelser tager Teater Kopfkino os med på en komisk
+                  dannelsesrejse midt i bøvlede livsprocesser.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/levenderum.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Det levende rum
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:00</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Spræng Danseteater. I ‘Det Levende Rum’
+                  møder vi de mennesker, der er blevet elimineret fra den
+                  utopiske verden ‘New Harmony’. De er alle syndige i at have
+                  brudt ‘New Harmony’s regler og normer for god opførsel. Sat
+                  uden for samfundet opdager de, at de er overladt til dem selv,
+                  at der ingen begrænsninger og konsekvenser er, ved at følge
+                  deres menneskelige drifter. Sproget forsvinder, og fysikken
+                  tager over. Velkommen til den store driftsfest! Medvirkende:
+                  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga
+                  Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt
+                  Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og
+                  DATS - Dansk Amatør Teater & Scenekunst.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/rebirth.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:15</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/mandligger.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Mand Ligger Som..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">19:15</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Kill Your Darlings Hvad sker der mellem
+                  mænd når der ikke er andre til stede? Logen: Et sted hvor kun
+                  mænd er velkomne. Hvor mænd føler sig trygge, men også hvor
+                  alt er på spil, både for dem som individer og som gruppe. Et
+                  nyt medlem skal optages i logen og indvies i broderskabets
+                  fællesskab, ritualer og kutymer. Hierarki, skyld, tabu, magt
+                  og maskulinitet bliver sat på en spids i et rum, hvor alt er
+                  velkomment. Både de sarte og følsomme momenter, samt vold,
+                  druk og alt imellem. Instruktør Rasmus Kragh Hemmingsen,
+                  Medinstruktør Laura Reynberg Langkilde Kunstnerisk ledelse
+                  Josefine Münster-Swendsen, Laura Reynberg Langkilde, Rasmus
+                  Kragh Hemmingsen Skuespillere Andreas Bitsch Lucas Da Costa
+                  Jørgensen, Malthe Heiberg, Mattias Valdemar Nielsen, Niels
+                  August Garly Andersen, Rasmus Grarup Elbo, Idé Bjørn
+                  Fonnesbech, Niels August Garly Andersen, Rasmus Kragh
+                  Hemmingsen Lys/lydtekniker Rasmus Lindahl Konsulent: Mia
+                  Lomholt Tvede
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/rebirth.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">20:00</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-7 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/vildskud.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Frygten for ikke..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">20:30</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af JUNOS DISCIPLE I forestillingen “Frygten
+                  for ikke at leve” stiller vi os foran det spejl, der hedder
+                  Emilie Sannom. Emilie var berømt stuntkvinde og luftakrobat i
+                  1920’ernes stumfilm. Hun var frygtløs - der var ingenting hun
+                  ikke turde. Hun var verdenskendt som filmens vovehals,
+                  mændenes overmand og luftens herskerinde. I et drømmeunivers
+                  undersøger vi mennesket uden frygt. Kan vi leve et helt liv,
+                  og aldrig blive bange? Kan vi give afkald på frygten, uden at
+                  give afkald på os selv? Hvor smal er linjen mellem drøm og
+                  mareridt? Medvirkende: Amanda Syhler, Barbara Campeotto, Xenia
+                  Winther, Anna Gohr, Kristina Freese, Christian Mondrup, Fie
+                  Schmidt og Sofie Øhrberg Lund Konsulent: Julie Mogensen.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <!-- lørdag -->
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/vildskud.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Frygten for ikke..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">12:30</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af JUNOS DISCIPLE I forestillingen “Frygten
+                  for ikke at leve” stiller vi os foran det spejl, der hedder
+                  Emilie Sannom. Emilie var berømt stuntkvinde og luftakrobat i
+                  1920’ernes stumfilm. Hun var frygtløs - der var ingenting hun
+                  ikke turde. Hun var verdenskendt som filmens vovehals,
+                  mændenes overmand og luftens herskerinde. I et drømmeunivers
+                  undersøger vi mennesket uden frygt. Kan vi leve et helt liv,
+                  og aldrig blive bange? Kan vi give afkald på frygten, uden at
+                  give afkald på os selv? Hvor smal er linjen mellem drøm og
+                  mareridt? Medvirkende: Amanda Syhler, Barbara Campeotto, Xenia
+                  Winther, Anna Gohr, Kristina Freese, Christian Mondrup, Fie
+                  Schmidt og Sofie Øhrberg Lund Konsulent: Julie Mogensen.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/levenderum.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Det levende rum
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">12:45</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Spræng Danseteater. I ‘Det Levende Rum’
+                  møder vi de mennesker, der er blevet elimineret fra den
+                  utopiske verden ‘New Harmony’. De er alle syndige i at have
+                  brudt ‘New Harmony’s regler og normer for god opførsel. Sat
+                  uden for samfundet opdager de, at de er overladt til dem selv,
+                  at der ingen begrænsninger og konsekvenser er, ved at følge
+                  deres menneskelige drifter. Sproget forsvinder, og fysikken
+                  tager over. Velkommen til den store driftsfest! Medvirkende:
+                  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga
+                  Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt
+                  Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og
+                  DATS - Dansk Amatør Teater & Scenekunst.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/mandligger.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Mand Ligger Som..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">13:00</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Kill Your Darlings Hvad sker der mellem
+                  mænd når der ikke er andre til stede? Logen: Et sted hvor kun
+                  mænd er velkomne. Hvor mænd føler sig trygge, men også hvor
+                  alt er på spil, både for dem som individer og som gruppe. Et
+                  nyt medlem skal optages i logen og indvies i broderskabets
+                  fællesskab, ritualer og kutymer. Hierarki, skyld, tabu, magt
+                  og maskulinitet bliver sat på en spids i et rum, hvor alt er
+                  velkomment. Både de sarte og følsomme momenter, samt vold,
+                  druk og alt imellem. Instruktør Rasmus Kragh Hemmingsen,
+                  Medinstruktør Laura Reynberg Langkilde Kunstnerisk ledelse
+                  Josefine Münster-Swendsen, Laura Reynberg Langkilde, Rasmus
+                  Kragh Hemmingsen Skuespillere Andreas Bitsch Lucas Da Costa
+                  Jørgensen, Malthe Heiberg, Mattias Valdemar Nielsen, Niels
+                  August Garly Andersen, Rasmus Grarup Elbo, Idé Bjørn
+                  Fonnesbech, Niels August Garly Andersen, Rasmus Kragh
+                  Hemmingsen Lys/lydtekniker Rasmus Lindahl Konsulent: Mia
+                  Lomholt Tvede
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/vildskud.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Frygten for ikke..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">14:45</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af JUNOS DISCIPLE I forestillingen “Frygten
+                  for ikke at leve” stiller vi os foran det spejl, der hedder
+                  Emilie Sannom. Emilie var berømt stuntkvinde og luftakrobat i
+                  1920’ernes stumfilm. Hun var frygtløs - der var ingenting hun
+                  ikke turde. Hun var verdenskendt som filmens vovehals,
+                  mændenes overmand og luftens herskerinde. I et drømmeunivers
+                  undersøger vi mennesket uden frygt. Kan vi leve et helt liv,
+                  og aldrig blive bange? Kan vi give afkald på frygten, uden at
+                  give afkald på os selv? Hvor smal er linjen mellem drøm og
+                  mareridt? Medvirkende: Amanda Syhler, Barbara Campeotto, Xenia
+                  Winther, Anna Gohr, Kristina Freese, Christian Mondrup, Fie
+                  Schmidt og Sofie Øhrberg Lund Konsulent: Julie Mogensen.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/levenderum.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Det levende rum
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:15</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Spræng Danseteater. I ‘Det Levende Rum’
+                  møder vi de mennesker, der er blevet elimineret fra den
+                  utopiske verden ‘New Harmony’. De er alle syndige i at have
+                  brudt ‘New Harmony’s regler og normer for god opførsel. Sat
+                  uden for samfundet opdager de, at de er overladt til dem selv,
+                  at der ingen begrænsninger og konsekvenser er, ved at følge
+                  deres menneskelige drifter. Sproget forsvinder, og fysikken
+                  tager over. Velkommen til den store driftsfest! Medvirkende:
+                  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga
+                  Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt
+                  Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og
+                  DATS - Dansk Amatør Teater & Scenekunst.
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="./img/mandligger.webp"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Mand Ligger Som..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">17:30</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./img/arrow2.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Kill Your Darlings Hvad sker der mellem
+                  mænd når der ikke er andre til stede? Logen: Et sted hvor kun
+                  mænd er velkomne. Hvor mænd føler sig trygge, men også hvor
+                  alt er på spil, både for dem som individer og som gruppe. Et
+                  nyt medlem skal optages i logen og indvies i broderskabets
+                  fællesskab, ritualer og kutymer. Hierarki, skyld, tabu, magt
+                  og maskulinitet bliver sat på en spids i et rum, hvor alt er
+                  velkomment. Både de sarte og følsomme momenter, samt vold,
+                  druk og alt imellem. Instruktør Rasmus Kragh Hemmingsen,
+                  Medinstruktør Laura Reynberg Langkilde Kunstnerisk ledelse
+                  Josefine Münster-Swendsen, Laura Reynberg Langkilde, Rasmus
+                  Kragh Hemmingsen Skuespillere Andreas Bitsch Lucas Da Costa
+                  Jørgensen, Malthe Heiberg, Mattias Valdemar Nielsen, Niels
+                  August Garly Andersen, Rasmus Grarup Elbo, Idé Bjørn
+                  Fonnesbech, Niels August Garly Andersen, Rasmus Kragh
+                  Hemmingsen Lys/lydtekniker Rasmus Lindahl Konsulent: Mia
+                  Lomholt Tvede
+                </p>
+                <button
+                  class="mt-5 flex self-end rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                >
+                  <a class="cursor-pointer" href="køb_billet.html">
+                    Køb billet</a
+                  >
+                </button>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <section class="h-96"></section>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
