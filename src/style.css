@@ -64,16 +64,25 @@ tr:hover {
   padding-bottom: 35px;
 }
 
+iframe {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
 @media only screen and (min-width: 700px) {
   .hero_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 70px;
   }
 
   .hero_titel {
     display: flex;
     flex-direction: column;
-    place-items: center;
+    place-self: end;
+  }
+
+  .table_container {
+    place-self: start;
   }
 
   .hero_titel h1 {
@@ -86,6 +95,23 @@ tr:hover {
     font-size: 25px;
     line-height: 2ch;
     text-align: center;
+  }
+
+  .find_vej_grid {
+    gap: 25px;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hvor_finder_titel {
+    place-self: end;
+    align-self: center;
+  }
+
+  .maps_container {
+    align-self: center;
+    justify-self: start;
   }
 }
 
