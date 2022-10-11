@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="fixed top-0 h-screen w-screen bg-[#1F2E7A] blur-[70px]">
+      <div
+        class="absolute h-screen w-screen animate-spin-slow bg-center"
+        style="background-image: url(img/bg-shapes-square.svg)"
+      ></div>
+    </div>
+    <header>
+      <nav
+        class="relative flex justify-center space-y-10 pt-8 md:justify-end md:pr-20"
+      >
+        <ul>
+          <a
+            class="rounded-full bg-white p-3 text-sm text-black"
+            href="index.html"
+            >Program/forestilligner</a
+          >
+          <a
+            class="rounded-full border-2 border-white p-3 text-sm text-white hover:bg-white hover:p-3 hover:text-black"
+            href="frivillig.html"
+            >Frivillig</a
+          >
+          <a
+            class="rounded-full border-2 border-white p-3 text-sm text-white hover:bg-white hover:p-3 hover:text-black"
+            href="opencall.html"
+            >Opencall</a
+          >
+        </ul>
+      </nav>
+    </header>
+
+    <section class="find_vej_grid relative grid place-items-center">
+      <div
+        class="hvor_finder_titel mt-10 mb-10 flex flex-col place-items-center"
+      >
+        <h3 class="find_vej_h3 text-2xl font-bold text-purple-100">
+          Find vej på festivalen
+        </h3>
+        <h2 class="text-4xl font-bold text-purple-100">Xenon - Teaterhuset</h2>
+        <p class="w-72 pt-8 text-purple-100">
+          Xenon er en del af kulturhuset "Huset", som ligger på
+          <span class="font-bold">Rådhusstræde 13</span>. Kom forbi og se noget
+          dejlig vækstlagsteater!
+        </p>
+      </div>
+      <div class="maps_container flex max-w-xs place-items-center">
+        <iframe
+          class="rounded-lg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5230.804398559887!2d12.570808831538077!3d55.67670160834104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652531164a3fb89%3A0xdb78617809263eb5!2sHuset-KBH!5e0!3m2!1sda!2sdk!4v1665399969024!5m2!1sda!2sdk"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="fixed top-0 h-screen w-screen bg-[#1F2E7A] blur-[70px]">
+      <div
+        class="absolute h-screen w-screen animate-spin-slow bg-center"
+        style="background-image: url(img/bg-shapes-square.svg)"
+      ></div>
+    </div>
+    <header>
+      <nav
+        class="relative flex justify-center space-y-10 pt-8 md:justify-end md:pr-20"
+      >
+        <ul>
+          <a
+            class="rounded-full bg-white p-3 text-sm text-black"
+            href="index.html"
+            >Program/forestilligner</a
+          >
+          <a
+            class="rounded-full border-2 border-white p-3 text-sm text-white hover:bg-white hover:p-3 hover:text-black"
+            href="frivillig.html"
+            >Frivillig</a
+          >
+          <a
+            class="rounded-full border-2 border-white p-3 text-sm text-white hover:bg-white hover:p-3 hover:text-black"
+            href="opencall.html"
+            >Opencall</a
+          >
+        </ul>
+      </nav>
+    </header>
+    <section class="find_vej_grid relative grid place-items-center">
+      <div
+        class="hvor_finder_titel mt-10 mb-10 flex flex-col place-items-center"
+      >
+        <h3 class="find_vej_h3 text-2xl font-bold text-purple-100">
+          Find vej på festivalen
+        </h3>
+        <h2 class="text-4xl font-bold text-purple-100">Alle lokationer</h2>
+        <p class="w-72 pt-8 text-purple-100">
+          Scenerne på Vildskud festival, er spredt udover 3 lokationer i KBH.
+          <br />
+          <br />
+          Du finder scenerne <span class="font-bold">XENON</span> og
+          <span class="font-bold">VOX</span> i kulturhuset "Huset KBH". <br />
+          <br />
+          Lige rundt om hjørnet fra "Huset KBH" finder du kulturstedet
+          <span class="font-bold">DOWNUNDER</span>, som huser forestillingen
+          Re-Birth. Du kan altså nemt finde rundt til størstedelen af
+          festivalens forestillinger, blot ved at være i dette område. <br />
+          <br />
+          Sidste lokation <span class="font-bold">ZeBu</span> befinder sig på
+          Amager. Her skal du altså lige sætte en halv time af til transport
+          hvis du kommer fra de andre spillesteder. Men fat mod, det er bestemt
+          umagen værd!
+        </p>
+      </div>
+      <div
+        class="maps_container find_vej_maps_container flex max-w-xs place-items-center"
+      >
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1ykJugnuQIbd5GkBLPMN74-erwiSUyZk&hl=da&ehbc=2E312F"
+          width="640"
+          height="480"
+        ></iframe>
+      </div>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
