@@ -8,26 +8,53 @@
   </head>
   <body>
     <header>
-      <nav
-        class="relative z-20 flex justify-center space-y-10 pt-8 md:justify-end md:pr-20"
-      >
-        <ul>
-          <a
-            class="rounded-full border-2 border-white p-3 text-sm text-white hover:bg-white hover:p-3 hover:text-black"
-            href="index.html"
-            >Program</a
+      <nav class="relative top-0 left-0 z-50 w-full">
+        <div
+          class="container m-auto flex items-center justify-between text-slate-900 text-opacity-70"
+        >
+          <div class="">
+            <a href="/"
+              ><img src="./img/vildskud-logo.svg" alt="" class="h-16 py-3 pl-8"
+            /></a>
+          </div>
+          <ul
+            class="hidden cursor-pointer items-center gap-4 pr-10 text-base font-semibold md:flex"
           >
-          <a
-            class="rounded-full border-2 border-white p-3 text-sm text-white hover:bg-white hover:p-3 hover:text-black"
-            href="frivillig.html"
-            >Frivillig</a
+            <li class="rounded py-4 px-6 hover:bg-purple-100">
+              <a href="index.html">PROGRAM</a>
+            </li>
+            <li class="rounded py-4 px-6 hover:bg-purple-100">
+              <a href="frivillig.html">FRIVILLIG</a>
+            </li>
+            <li class="rounded bg-purple-100 py-4 px-6">
+              <a href="opencall.html">OPENCALL</a>
+            </li>
+          </ul>
+          <button
+            class="group mx-2 block rounded py-3 px-4 hover:bg-purple-100 focus:outline-none md:hidden"
           >
-          <a
-            class="rounded-full bg-white p-3 text-sm text-black"
-            href="opencall.html"
-            >Opencall</a
-          >
-        </ul>
+            <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
+            <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
+            <div class="h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
+            <div
+              class="absolute top-0 -right-full h-screen w-8/12 bg-white opacity-0 transition-all duration-300 group-focus:right-0 group-focus:opacity-100"
+            >
+              <ul
+                class="curser-pointer flex w-full flex-col items-center pt-10 text-base"
+              >
+                <li class="w-full py-4 px-6 hover:bg-purple-100">
+                  <a href="index.html">PROGRAM</a>
+                </li>
+                <li class="w-full py-4 px-6 hover:bg-purple-100">
+                  <a href="frivillig.html">FRIVILLIG</a>
+                </li>
+                <li class="w-full bg-purple-100 py-4 px-6">
+                  <a href="opencall.html">OPENCALL</a>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
       </nav>
     </header>
 
