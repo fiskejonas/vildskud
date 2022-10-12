@@ -15,7 +15,7 @@
     </div>
 
     <header>
-      <nav
+      <!-- <nav
         class="relative flex justify-center space-y-10 pt-8 md:justify-end md:pr-20"
       >
         <ul>
@@ -35,6 +35,40 @@
             >Opencall</a
           >
         </ul>
+      </nav> -->
+      <nav class="relative top-0 left-0 z-50 w-full">
+        <div
+          class="container m-auto flex items-center justify-between text-slate-900 text-opacity-70"
+        >
+          <div class="">
+            <img src="./img/vildskud-logo.svg" alt="" class="h-16 py-3 pl-8" />
+          </div>
+          <ul
+            class="hidden cursor-pointer items-center pr-10 text-base font-semibold md:flex"
+          >
+            <li class="py-4 px-6 hover:bg-purple-100 rounded">PROGRAM</li>
+            <li class="py-4 px-6 hover:bg-purple-100 rounded">FRIVILLIG</li>
+            <li class="py-4 px-6 hover:bg-purple-100 rounded">OPENCALL</li>
+          </ul>
+          <button
+            class="group mx-2 block rounded py-3 px-4 hover:bg-purple-100 focus:outline-none md:hidden"
+          >
+            <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
+            <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
+            <div class="h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
+            <div
+              class="absolute top-0 -right-full h-screen w-8/12 bg-white opacity-0 transition-all duration-300 group-focus:right-0 group-focus:opacity-100"
+            >
+              <ul
+                class="curser-pointer flex w-full flex-col items-center pt-10 text-base"
+              >
+                <li class="w-full py-4 px-6 hover:bg-purple-100">PROGRAM</li>
+                <li class="w-full py-4 px-6 hover:bg-purple-100">FRIVILLIG</li>
+                <li class="w-full py-4 px-6 hover:bg-purple-100">OPENCALL</li>
+              </ul>
+            </div>
+          </button>
+        </div>
       </nav>
     </header>
 
