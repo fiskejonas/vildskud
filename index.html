@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" crossorigin src="./assets/main.6237abdc.js"></script>
+    <link rel="stylesheet" href="./assets/index.35abc7d9.css">
+  </head>
+  <body class="">
+    <div class="fixed top-0 h-screen w-screen bg-[#1F2E7A] blur-[70px]">
+      <div
+        class="absolute h-screen w-screen animate-spin-slow bg-center"
+        style="background-image: url(./assets/bg-shapes-square.08afa14e.svg)"
+      ></div>
+    </div>
+
+    <header>
+      <nav class="relative top-0 left-0 z-50 w-full">
+        <div
+          class="container m-auto flex items-center justify-between text-slate-900 text-opacity-70"
+        >
+          <div class="">
+            <a href="/"
+              ><img src="./assets/vildskud-logo.7c524095.svg" alt="" class="h-16 py-3 pl-8"
+            /></a>
+          </div>
+          <ul
+            class="hidden cursor-pointer items-center gap-4 pr-10 text-base font-semibold md:flex"
+          >
+            <li class="rounded bg-purple-100 py-4 px-6">
+              <a href="index.html">PROGRAM</a>
+            </li>
+            <li class="rounded py-4 px-6 hover:bg-purple-100">
+              <a href="frivillig.html">FRIVILLIG</a>
+            </li>
+            <li class="rounded py-4 px-6 hover:bg-purple-100">
+              <a href="opencall.html">OPENCALL</a>
+            </li>
+          </ul>
+          <button
+            class="group mx-2 block rounded py-3 px-4 hover:bg-purple-100 focus:outline-none md:hidden"
+          >
+            <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
+            <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
+            <div class="h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
+            <div
+              class="absolute top-0 -right-full h-screen w-8/12 bg-white opacity-0 transition-all duration-300 group-focus:right-0 group-focus:opacity-100"
+            >
+              <ul
+                class="curser-pointer flex w-full flex-col items-center pt-10 text-base"
+              >
+                <li class="w-full bg-purple-100 py-4 px-6">
+                  <a href="index.html">PROGRAM</a>
+                </li>
+                <li class="w-full py-4 px-6 hover:bg-purple-100">
+                  <a href="frivillig.html">FRIVILLIG</a>
+                </li>
+                <li class="w-full py-4 px-6 hover:bg-purple-100">
+                  <a href="opencall.html">OPENCALL</a>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="hero_container relative mt-28 flex flex-col place-items-center">
+      <div
+        class="hero_titel mb-6 flex max-w-xs flex-col place-items-center gap-4"
+      >
+        <h1 class="text-center text-6xl font-bold text-purple-100">
+          VILDSKUD FESTIVAL
+        </h1>
+        <h2 class="cta w-72 text-center text-2xl font-semibold text-purple-100">
+          GÅ PÅ OPDAGELSE I SCENEKUNSTENS UNDERGRUND
+        </h2>
+        <h4 class="hero_dato font-bold text-slate-800 text-opacity-50">
+          2.-6. august 2022
+        </h4>
+        <h3 class="hero_tekst text-center text-purple-100">
+          VILDSKUD er en fejring af alle former for upcoming scenekunst. Alt fra
+          klassisk teater, udendørs danseoplevelser, storytelling lysshows,
+          musiske sanseoplevelser – kun fantasien sætter grænser!
+        </h3>
+        <div class="flex gap-5">
+          <button
+            class="mt-5 flex w-32 rounded bg-blue-500 py-2 px-4 text-xs font-bold text-white hover:bg-opacity-50"
+          >
+            <a class="cursor-pointer" href="sådan_køber_du.html"
+              >Sådan køber du billet</a
+            >
+          </button>
+          <button
+            class="mt-5 flex w-32 rounded bg-blue-500 py-2 px-4 text-xs font-bold text-white hover:bg-opacity-50"
+          >
+            <a class="cursor-pointer" href="find_vej.html"
+              >Find vej på festivalen</a
+            >
+          </button>
+        </div>
+      </div>
+      <div
+        class="table_container flex flex-col place-items-center overflow-y-scroll rounded-xl bg-purple-400 bg-opacity-30 p-3 shadow-lg"
+      >
+        <table id="myTable" class="table">
+          <tbody>
+            <caption class="hej sticky top-0">
+              <div
+                class="mb-5 flex items-center justify-center gap-5 border-b-2 border-b-slate-900 border-opacity-70 pb-3"
+              >
+                <h2 class="z-30 text-3xl font-bold text-purple-100">PROGRAM</h2>
+                <select
+                  class="flex w-32 cursor-pointer rounded border-none bg-slate-900 bg-opacity-70 text-xl font-bold text-purple-50"
+                  id="dageDropdown"
+                >
+                  <option id="alle_dage">Dato</option>
+                  <option>Tirsdag</option>
+                  <option>Onsdag</option>
+                  <option>Torsdag</option>
+                  <option>Fredag</option>
+                  <option>Lørdag</option>
+                </select>
+              </div>
+            </caption>
+            <!-- Tirsdag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="data:image/webp;base64,UklGRnoHAABXRUJQVlA4IG4HAADwLQCdASqWAJYAPulsr1EpJiQjpxXbYSAdCWUAyukYM0z2Dw/PchI7B7GRi9yRAwJ6J+NbRopx3lu0OKi1APHFH8inC2nWsUm03B41NOu9QMERL9T+QFOTjQ9Ppnwqy1IG2gp/py/4DpZnpTc8NBzU1Wkebr8szdembHShPkpskDZka/pwUOLqcXkCXqceHdT4iUTQFyF6z/69ho0qRWiieSpKxnjysGYzH+vYgT28bWeeTWn29Y8V8tmtx2yDY3W6GtR7kfwgbblpgJAG3lyvMY5gKXofOb2Vt7mMTVbX11SNv7LGZwXo/ciVS2g8kPb7TBf64lrFrPBXz0U9uoZWocjqMmTWVNizBak31E9omv+uCY9KrMO1SHbI7Ye1hGgKHVZ9eF5FsF4ewhSS36MGME/ZuBZWk/WTzSiXFfwFw5hCrnHRBKrSI8EocveMUZIoJQSdv9gileRqEczPaDEvSMgmfsvaBCxORgyHrJuQ5+O8MbdNlNBAAP70URU57dz3ogbwA9gSaZ4perXI+WqhXIhap61UHbByiUrHo/Qa3ab3rtNwa3BtfMgJ4bSNlX67dixXcKeDMrvnnqEPS8dB4zcNLX1nFaUGOFcENsUsOgheh5W+iXPVnFr0hDM02kU1GpWEY6YzPPODOkKAH/AkkNZPtMo6sup4W4jlUI+w8kgAR7bDxp/hSU8ISffrOu5q64YTxS22kIEt9pExNY816Z5w0sKOBUxiEE0PNp1iPSDpPaRk0AYTplIBUgfBFBkCqONMZJ76FY7yaPl9SVEz4WnuqhvMkd0oBE3l9QUNtEjxvwZAJogZWgZoAODLUYkwZ06sBXY+2kLohzZMtsPxKkRgZWyQY6VCpsfBIu6JR4UBvFxafLKNPtX+ftC3s7ymo5LwkNeWie4UyRu0Q/hXkk4SWmssouL1mphSyLKygg0D+YrHH95aNzQDuUtLYd7eUNRazgWrt2Pd+ENOk3nLEHgIw27e41rU5t+846k6JSW2fJlQwOxTmgAzWjP1MG4IAs4LenimnnJD8R2euPA1fud7UeLkt/PdfBV8pnbPYDMrIJElk3N1QMFgctx2pu6Xwg922N0kfD1E99mkx2ukIsx7XEf9PhNhYSXz5+NLySc1NeEhKA3zGRfPj8Z8onJZmb0yQuAkUfbBlpg2jWbfTko2f4Idfo7CP+Q3YiPYsu/5T00I0clNXjjptbYoixCOuH+ITPavvoHwEyyW3auQPiAczRt+tAQ8OAA3hdqMc1gRkAhPPmR6NBy2nCOWGlEo0v2w4eBd/P/lJlm9VPc7nUckJ8eYWm6CWyDoYiO9+AzGFjnQ5HJKn6Jt5ttuQeW7EMZwdQ0R2cz4UXbUfZcJ9S0qQp1qfkuDhyAl+aeTi7POQ0Xj959EUHB85tmlR44ua6CFz/oDbj4aABptcU2gxb6VRcx7eCkKX9VZZHG3aYNJF69r+Tx3MQcxWy9xUIhZ/EyZmibfF5gzIhJyOB9pAuQkUMW9WsqBIFMuM3/iZ9s4RdX21hV6eQU56kw5kLLxKuQQSOpeU+qM3pMX1AYwLOUZo3xxTzdEczMGJ5eZEa7hPdVSauvcF9JCScBhlo4mykOHYIFdTN1iFUMOZ/KzYCw2vsOKUL9uR6EPFtcbdyjZ+RaOzjqMN0H0JejHfy39yCrlqzeO4NhnJLVbHtn5ohfIBZBlh64rqf14b3SURKINaF3qL9vGNE5Ut5XivOJQoq5apTp/VaBXGZCzSrWeYvF+ftRriTUEFlwQkk9Ol1UUVrzZqe+Eg78wBZjrSzYsJ2sKi8VxWZqH/b2iKniBtZnM21zLl5076BKzXG4Aa8iYalE8QC+nsG2eqEIwPBJkeaMcn7qA5UBIILZbsS4x/4+GvWUUYL8b7EX8qI6oV0FKRadFyxUTiMBXMXiI6xSWFyARkDaTffLbXlbXZChLXUQRVYBB7ohXyebrQOpiiYAmGsl9/t8DpnPtJC8oAT1YYp+6NrS/S2soA8UAIbRt2AVA3whYDnJloSb2k7txat8IDllpTIilv8rm3MBM8EXmnnZOmeXBeqAq077d6908/GlvZeyKF+b0vlTv8W8ba5fh4anaaVTdaTz/0PBzW8G8aWrCrx1Hms8T80O3+HBFF4whQHnh/X2sCFWLSuVeW66eaazB9jrA7zvm+oGtHcZYt8XHG6Pk8UzClLLYv7Zw84nHfsxoQyyzwlYyR1WEaOsMc4/08fk/jhuSDZK3nWwO4UMcr6TJCZAzcdoIx46LQGpHZRLcyJ7DgkGspFZKvZcBHrlrQQG5GSzP27ZHuSj82rcCCiw/e7kOqw7SVZcRSvG2Ur6Bc5Jw3GnwaQ1z9vD0qFWiiQP9cfdGUmMzF4r2fNG//xWayggpakbdbRTvnZY5tylUdPE6ftrfSbqoJfbJgPRJFUiUjdH2QhEfxmQtgOLDoKUkMkyU32dLRGtKrxYlM1LApeK+1sm2W/jmz2tnQk25uFTVGTuGyMYvViJrs/QO16uiDSp7pFK12bgNz1SdXbkcIW8kCVKQnAA=" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  WFTWT
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:00</div>
+                  <div class="text-sm font-semibold">Tirsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Tirsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Astrid & Lotte Forestillingen “What Fires
+                  Together Wires Together” eksperimenterer i spændingsfeltet
+                  mellem dans/bevægelse og naturvidenskab. Den tager
+                  udgangspunkt i psykologen Donald Hebbs teori fra 1949; “What
+                  fires together wires together”, der beskriver hvordan
+                  repetitiv fyring af to nærliggende neuroner øger
+                  effektiviteten af den pågældende neuronale bane. Lidt ligesom
+                  en sti i græsset, der bliver nemmere at betræde jo flere, der
+                  går på den. Alt dette er sat i et identitetsperspektiv, der
+                  sætter spørgsmålstegn ved, hvor fastgroet vores identitet i
+                  virkeligheden er. Medvirkende: Astrid Sten Andersen, Lotte
+                  Bjørnholt Fink, Anton Hvidtjørn og Sidsel Sten Andersen
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="zebu.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <!-- vild med -->
+            <tr class="table_row mb-7 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Vild med..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:30</div>
+                  <div class="text-sm font-semibold">Tirsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Tirsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af TEATER MANNEQUIN Velkommen! Til et univers i
+                  kærlighedens navn. Vi inviterer dig ind i en intim, musikalsk
+                  og glimtende undersøgelse af selvbilleder, kærlighed og higen
+                  efter at blive set, hørt og rørt. Vi tager dig i hånden og
+                  følger dig trygt igennem vores svar på livets store spørgsmål;
+                  er selvkærlighed løsningen på alle problemer? Havde din
+                  gymnasielærer ret, da hun sagde, du bare skulle stole mere på
+                  dig selv - så vil verden lægge sig for dine fødder?
+                  Medvirkende: Therese Maria Bilfeldt, Matilde Kjær Hilligsøe og
+                  Laura Alhed Nielsen Konsulent: Alberte M. H Jacobsen.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="vox.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <!-- Onsdag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="data:image/webp;base64,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" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  WFTWT
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">17:30</div>
+                  <div class="text-sm font-semibold">Onsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Onsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Astrid & Lotte Forestillingen “What Fires
+                  Together Wires Together” eksperimenterer i spændingsfeltet
+                  mellem dans/bevægelse og naturvidenskab. Den tager
+                  udgangspunkt i psykologen Donald Hebbs teori fra 1949; “What
+                  fires together wires together”, der beskriver hvordan
+                  repetitiv fyring af to nærliggende neuroner øger
+                  effektiviteten af den pågældende neuronale bane. Lidt ligesom
+                  en sti i græsset, der bliver nemmere at betræde jo flere, der
+                  går på den. Alt dette er sat i et identitetsperspektiv, der
+                  sætter spørgsmålstegn ved, hvor fastgroet vores identitet i
+                  virkeligheden er. Medvirkende: Astrid Sten Andersen, Lotte
+                  Bjørnholt Fink, Anton Hvidtjørn og Sidsel Sten Andersen
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="zebu.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <!-- vild med onsdag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Vild med..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:10</div>
+                  <div class="text-sm font-semibold">Onsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Onsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af TEATER MANNEQUIN Velkommen! Til et univers i
+                  kærlighedens navn. Vi inviterer dig ind i en intim, musikalsk
+                  og glimtende undersøgelse af selvbilleder, kærlighed og higen
+                  efter at blive set, hørt og rørt. Vi tager dig i hånden og
+                  følger dig trygt igennem vores svar på livets store spørgsmål;
+                  er selvkærlighed løsningen på alle problemer? Havde din
+                  gymnasielærer ret, da hun sagde, du bare skulle stole mere på
+                  dig selv - så vil verden lægge sig for dine fødder?
+                  Medvirkende: Therese Maria Bilfeldt, Matilde Kjær Hilligsøe og
+                  Laura Alhed Nielsen Konsulent: Alberte M. H Jacobsen.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="vox.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <!-- vild med kl 20 -->
+            <tr class="table_row mb-7 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,UklGRqQIAABXRUJQVlA4IJgIAACQOgCdASqWAJYAPyWAtVKuKKUisPV+ycAkiUAZIRxqR45QXLz/eH1X2lPQY8u/Pxvo7awW8Wro+IF1Sknpa2dBSzl75/kT4UdW2f4qXrqxthGG8HTyUotWi5mIruV2L7Uc9lnLKYlkVUh21udsyIuOP0YESts0XPQW7lQGgiVrcZd74FKFrvv5QXrnAkP6WaYW5K09wWQ9xxXm3iN8qhRxqdyzl91Q1QPdvgbCZ4pogxXIdGtltEEYwrcBvoQMdXdPjE0UNwS27jlzg0AhxaB8vXxhz+gANs0HR7H4lUVvYgK91V3/xZJ7Z9yCWSXo1A1O6LJrJVoJOKi6eT7OixPS8YYI25vJiprVUP1oT8Th3UrH4w3ae9VC+zpFmmlCtJ9WbvZZABce2xrwPJZEkbgv/gvZXqNE3r8tdq0BwsCIl9/ilsVqrxhtsml0WP/2M+h3PseZj18O/JRkol5NMhGmfoJhdBE/e0609jFFwQHh5464ETrTNZuZZ7RgNjYUf75lhiWTh3jatkYb6/piwsAsrukc7VUAQ03oSkijA5BAS0tHYeJPNrrLLCvxOJampMdopV3boOWSL+Vbrj2BGIwKrNpJ6sq2pCgK8kK6NVwFyAKJev+Ji4kGqcfWD7gA/MshSJZOUp1HVj5vbEZe3dd34dCgPGe/nZ+vtLa8qx1zPnfjtnH0u5C18pu78NXEZsfv0FfEEDsf+TAE0ZB0VlcJDiAVb1UM1UMblZzRpUGiNw4HTO89AlQdx9dabOr5Os1j/VWQPYN60PLUDkGQQs2MgMBZRR7NyK2MOPjTf0yLGnc4DLKXT+MKZfioRJBvS+lEgRTvTGzTl0LkBbrfJNEBtxRdtu0avN3e0YpCRgIFPC9oOQBBRNNqg157vxw3koRNZf70KqdxLB/NOOgfIZYTkwMXC53H2L7div54mm7TdJR2HaN+Cpf1Vwr4bH+7GyC7BTgslJtitZsrwpDdYS8ol0pjZdtBJz6SKOj6DRFfsDiRAEHiKQWRY001s1W2Vhm22P3CbbMwClzoSdDO54cTdhoN6Mhslk5PeQzez6R7nS8z5zenetqRde1zdEBvAPHpna0bVmHvP9SC8IJSdCQarZgxqvf1be4lh8I49vQ3GczX9sSvSLdhpKzh+cldsIDUy1wPqTlNDeHnReazCSd7FOBlAJZb0LQt+pFFzg16X8Ajxa4hRa9XMD4c+FGxXQaWXbqdbiHtbr7PdUQ8sAviL2cQBuQbT3Rr/BrD2ANsOcz/pHB65dNr1JPR7PTpnJKfLqgZhHbkAHpECqROLHzib1w1R5nsgQVGdZCMA76y3RJLRgPsLkNNx6Ib3cRsboonzllI6+Bm5VtKvA9LHUapQTqE8QM73LOk2i3gTW7gKVdle/eK31ZA56OHyLEopujJPCWJYfB9eJhFNREosQFPiXTsUC0oXDjgHlqJw0yA/5+hDiMC8BKtmBH4LvWTDb6QbRpmuCAANB+urA5Jw1J/kkgnc6GTrzjrJmoatjs8lmoyF2jy4GI+xDLxwWMolb8NKA3zeCSevxajI0yPy+RjCOgYokk/NSXn9OHBC0yZVTRURoAILhrWB1uykaN7I3/OZMM9q06e3kccdcXfFbsv/V1FAzEhxlhJpMSQDd5zuPSOheIk9yMs8QUbCR2gfFxHvgBZS3W/iIUOuMAHPGPWximMtoyoj4Q5DzmQFrFDRuPagd6GBC0zWziatvBbFTm+boVeL1ptvTjyCCBLLbLPaZ4aUlpUQFofi9DUR9DS1xx9ovD2vBylLvGmqveUeFNSqbkFUAri3GCqUICF6uRvKLk3mLpAGU6+xlhyKrF6xnYN/DMdNnRxzsvtAMH1XomM/CYts9ZCczQWUB+PsGdTV670z+yPWdBQCDispfwa2nYX/4zorzilMPBZJrwQWJqiLpfwzMdHkWQALTxsWhgBLWGjeptNr0ygZBut/EHOBSAtSlFY3eor6GOcNE5BrGaIP5b8Fp8BNFaUn8wvhvqBiVwABSmh1oLppIs0+fVk4RsGkoRmGRsBImUzBpZP2uuMu2ZEVId5QSnPEAhfQkyhfTXZQCq5utGXZH5CLEz4nzLrFW+3+8P9ksa/SbBrOAa86p9lQcdi7uAdgJzwxmi/tyytLJqs+eFv41YMiWYmM6QHb2RqJD8Mcw+yRjBSZTUJgHsdIl7wNcY4Sq/ql1fUpP9MceNk5SbCJdAlvVc8Z1gk2iQLN8G66ifyi4HIm1tVMSAjytZ0kHqN9xuN+HQ/h5Q1EGG2cHyofbe7yugKkqKSNdGftUQQcB1Wy5Mdwxj09xS9y+/jDqbFGO5j8h8RZQCLBjiy1LEoisWzWsQTVpjzccvlUFNFmqOq7JhdNLsiQEXMXwrqPBkP8UgFGKNXBZovvRyqc8VuQRvKFx3g7B5FX8H5Z6cKWCTkfYZnlsPhNkLALX6FA7xjBx9wQ2glE+zMBuSZwTa3q41+JpeS58gyqbtyEm96JO1ZsMGaDpF+yyB90/Y1yTutZ2VbkpZKYMkDWeR4IvaxTiAOjSR3uABtQBFUxwO4B4Jcv3CFGWZu2LFL0oWBTmCmln2/gYfEvLtBjf+OLiPF11+ByPYje5xqjuIgQSU3RIhMb4k7/vs1IYyx+2s5itMhpwRSPVbWVYHkEGuTHbwuCfohMXUFCfl4NB/aBqc8R1dnxUJZTQtFhkUVZJwWEG5oqrEPUjoh+Q9QFSTbwdtneLmDK8YskBWaoWFBSSfCOWhKS5XzX9Icxt10Sl/kjwR1+v/ZlMzjSHFXBb2/5WgTW6G0T2y1dtB7A2Ttyxhej1SrVQZdMAjQ0reCqWGeIa61VcuDB1qxmaQQ5BvcVgvcijBiNz6V0sSv+8K1wbPVh9xRuAbMTDVXAmYdeDCw/pnm1qGEXjqFfYScHfLI6GvIiqyoo80vB44oKVZwyoAA"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Vild med..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">20:00</div>
+                  <div class="text-sm font-semibold">Onsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Onsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af TEATER MANNEQUIN Velkommen! Til et univers i
+                  kærlighedens navn. Vi inviterer dig ind i en intim, musikalsk
+                  og glimtende undersøgelse af selvbilleder, kærlighed og higen
+                  efter at blive set, hørt og rørt. Vi tager dig i hånden og
+                  følger dig trygt igennem vores svar på livets store spørgsmål;
+                  er selvkærlighed løsningen på alle problemer? Havde din
+                  gymnasielærer ret, da hun sagde, du bare skulle stole mere på
+                  dig selv - så vil verden lægge sig for dine fødder?
+                  Medvirkende: Therese Maria Bilfeldt, Matilde Kjær Hilligsøe og
+                  Laura Alhed Nielsen Konsulent: Alberte M. H Jacobsen.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="vox.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <!-- torsdag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">15:00</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="downunder.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="data:image/webp;base64,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" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  GO GO YO-YOKU
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:45</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af KOPFKINO Find din yoyo frem og sæt dig selv
+                  fri i en skov. Det går godt for de tre roomies med at dele
+                  lejlighed, men kæft det går dårligt med at være mennesker i en
+                  nulfejlskultur, hvor alt handler om meritter og
+                  milepælsplaner. Rakel er blevet droppet af sin eks, Lua kommer
+                  bare aldrig videre til prøverne på Skuespillerskolen og Skjold
+                  dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre
+                  for at blive stemplet som fiasko. Ikke flere hvide løgne for
+                  at være bedre end man er. Ikke mere pleaser-pis for at rykke
+                  op i sit selvskabte hierarki. Ud med skam og ind med sandhed.
+                  Med inspiration i Shinrin-Yoku,
+                  anti-happy-go-lucky-mentalitet, vigtige venner og svære
+                  erkendelser tager Teater Kopfkino os med på en komisk
+                  dannelsesrejse midt i bøvlede livsprocesser.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="xenon.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:15</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="downunder.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Det levende rum
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:30</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Spræng Danseteater. I ‘Det Levende Rum’
+                  møder vi de mennesker, der er blevet elimineret fra den
+                  utopiske verden ‘New Harmony’. De er alle syndige i at have
+                  brudt ‘New Harmony’s regler og normer for god opførsel. Sat
+                  uden for samfundet opdager de, at de er overladt til dem selv,
+                  at der ingen begrænsninger og konsekvenser er, ved at følge
+                  deres menneskelige drifter. Sproget forsvinder, og fysikken
+                  tager over. Velkommen til den store driftsfest! Medvirkende:
+                  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga
+                  Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt
+                  Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og
+                  DATS - Dansk Amatør Teater & Scenekunst.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="zebu.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="data:image/webp;base64,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" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  GO GO YO-YOKU
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">20:15</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af KOPFKINO Find din yoyo frem og sæt dig selv
+                  fri i en skov. Det går godt for de tre roomies med at dele
+                  lejlighed, men kæft det går dårligt med at være mennesker i en
+                  nulfejlskultur, hvor alt handler om meritter og
+                  milepælsplaner. Rakel er blevet droppet af sin eks, Lua kommer
+                  bare aldrig videre til prøverne på Skuespillerskolen og Skjold
+                  dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre
+                  for at blive stemplet som fiasko. Ikke flere hvide løgne for
+                  at være bedre end man er. Ikke mere pleaser-pis for at rykke
+                  op i sit selvskabte hierarki. Ud med skam og ind med sandhed.
+                  Med inspiration i Shinrin-Yoku,
+                  anti-happy-go-lucky-mentalitet, vigtige venner og svære
+                  erkendelser tager Teater Kopfkino os med på en komisk
+                  dannelsesrejse midt i bøvlede livsprocesser.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="xenon.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-7 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">15:00</div>
+                  <div class="text-sm font-semibold">Torsdag</div>
+                </div>
+              </td>
+              <td class="hidden">Torsdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="downunder.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <!-- fredag -->
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">15:00</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="downunder.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img class="w-14 rounded-full" src="data:image/webp;base64,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" alt="" />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  GO GO YO-YOKU
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:30</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af KOPFKINO Find din yoyo frem og sæt dig selv
+                  fri i en skov. Det går godt for de tre roomies med at dele
+                  lejlighed, men kæft det går dårligt med at være mennesker i en
+                  nulfejlskultur, hvor alt handler om meritter og
+                  milepælsplaner. Rakel er blevet droppet af sin eks, Lua kommer
+                  bare aldrig videre til prøverne på Skuespillerskolen og Skjold
+                  dater alarmerende uhyggeligt meget. Ikke flere undvigemanøvre
+                  for at blive stemplet som fiasko. Ikke flere hvide løgne for
+                  at være bedre end man er. Ikke mere pleaser-pis for at rykke
+                  op i sit selvskabte hierarki. Ud med skam og ind med sandhed.
+                  Med inspiration i Shinrin-Yoku,
+                  anti-happy-go-lucky-mentalitet, vigtige venner og svære
+                  erkendelser tager Teater Kopfkino os med på en komisk
+                  dannelsesrejse midt i bøvlede livsprocesser.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="xenon.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Det levende rum
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:00</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Spræng Danseteater. I ‘Det Levende Rum’
+                  møder vi de mennesker, der er blevet elimineret fra den
+                  utopiske verden ‘New Harmony’. De er alle syndige i at have
+                  brudt ‘New Harmony’s regler og normer for god opførsel. Sat
+                  uden for samfundet opdager de, at de er overladt til dem selv,
+                  at der ingen begrænsninger og konsekvenser er, ved at følge
+                  deres menneskelige drifter. Sproget forsvinder, og fysikken
+                  tager over. Velkommen til den store driftsfest! Medvirkende:
+                  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga
+                  Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt
+                  Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og
+                  DATS - Dansk Amatør Teater & Scenekunst.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="zebu.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">18:15</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="downunder.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Mand Ligger Som..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">19:15</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Kill Your Darlings Hvad sker der mellem
+                  mænd når der ikke er andre til stede? Logen: Et sted hvor kun
+                  mænd er velkomne. Hvor mænd føler sig trygge, men også hvor
+                  alt er på spil, både for dem som individer og som gruppe. Et
+                  nyt medlem skal optages i logen og indvies i broderskabets
+                  fællesskab, ritualer og kutymer. Hierarki, skyld, tabu, magt
+                  og maskulinitet bliver sat på en spids i et rum, hvor alt er
+                  velkomment. Både de sarte og følsomme momenter, samt vold,
+                  druk og alt imellem. Instruktør Rasmus Kragh Hemmingsen,
+                  Medinstruktør Laura Reynberg Langkilde Kunstnerisk ledelse
+                  Josefine Münster-Swendsen, Laura Reynberg Langkilde, Rasmus
+                  Kragh Hemmingsen Skuespillere Andreas Bitsch Lucas Da Costa
+                  Jørgensen, Malthe Heiberg, Mattias Valdemar Nielsen, Niels
+                  August Garly Andersen, Rasmus Grarup Elbo, Idé Bjørn
+                  Fonnesbech, Niels August Garly Andersen, Rasmus Kragh
+                  Hemmingsen Lys/lydtekniker Rasmus Lindahl Konsulent: Mia
+                  Lomholt Tvede
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="vox.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Re-birth
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">20:00</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">Downunder</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  Forestilling af af Where is the rabbithole Året er 2222, vi er
+                  i et underjordisk genfødselskammer - et såkaldt SkaberLab -
+                  hvor mennesker bliver skabt og genskabt, for at kunne leve i
+                  århundreder. . I forsøget på at løse forplantnings krisen,
+                  afskaffede vi den naturlige formering. Nu skabes mennesker af
+                  ufejlbart DNA, af en højteknologisk kult. Det perfekte
+                  menneske er alt. DNA’et er frit for sygdomme, men miljøet er
+                  stadig giftigt, så hvert 12. år genfødes mennesket i en
+                  fornyelsesproces kaldet: ’’RE-BIRTH’’. Bemærk: ønsker du at
+                  blive en aktiv del af ceremonien, så medbring et hårstrå.
+                  Medvirkende: Iben Damkjær, Emil Nygård Konsulent: Julie
+                  Mogensen
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="downunder.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-7 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Frygten for ikke..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">20:30</div>
+                  <div class="text-sm font-semibold">Fredag</div>
+                </div>
+              </td>
+              <td class="hidden">Fredag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af JUNOS DISCIPLE I forestillingen “Frygten
+                  for ikke at leve” stiller vi os foran det spejl, der hedder
+                  Emilie Sannom. Emilie var berømt stuntkvinde og luftakrobat i
+                  1920’ernes stumfilm. Hun var frygtløs - der var ingenting hun
+                  ikke turde. Hun var verdenskendt som filmens vovehals,
+                  mændenes overmand og luftens herskerinde. I et drømmeunivers
+                  undersøger vi mennesket uden frygt. Kan vi leve et helt liv,
+                  og aldrig blive bange? Kan vi give afkald på frygten, uden at
+                  give afkald på os selv? Hvor smal er linjen mellem drøm og
+                  mareridt? Medvirkende: Amanda Syhler, Barbara Campeotto, Xenia
+                  Winther, Anna Gohr, Kristina Freese, Christian Mondrup, Fie
+                  Schmidt og Sofie Øhrberg Lund Konsulent: Julie Mogensen.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="xenon.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <!-- lørdag -->
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Frygten for ikke..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">12:30</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af JUNOS DISCIPLE I forestillingen “Frygten
+                  for ikke at leve” stiller vi os foran det spejl, der hedder
+                  Emilie Sannom. Emilie var berømt stuntkvinde og luftakrobat i
+                  1920’ernes stumfilm. Hun var frygtløs - der var ingenting hun
+                  ikke turde. Hun var verdenskendt som filmens vovehals,
+                  mændenes overmand og luftens herskerinde. I et drømmeunivers
+                  undersøger vi mennesket uden frygt. Kan vi leve et helt liv,
+                  og aldrig blive bange? Kan vi give afkald på frygten, uden at
+                  give afkald på os selv? Hvor smal er linjen mellem drøm og
+                  mareridt? Medvirkende: Amanda Syhler, Barbara Campeotto, Xenia
+                  Winther, Anna Gohr, Kristina Freese, Christian Mondrup, Fie
+                  Schmidt og Sofie Øhrberg Lund Konsulent: Julie Mogensen.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="xenon.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Det levende rum
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">12:45</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Spræng Danseteater. I ‘Det Levende Rum’
+                  møder vi de mennesker, der er blevet elimineret fra den
+                  utopiske verden ‘New Harmony’. De er alle syndige i at have
+                  brudt ‘New Harmony’s regler og normer for god opførsel. Sat
+                  uden for samfundet opdager de, at de er overladt til dem selv,
+                  at der ingen begrænsninger og konsekvenser er, ved at følge
+                  deres menneskelige drifter. Sproget forsvinder, og fysikken
+                  tager over. Velkommen til den store driftsfest! Medvirkende:
+                  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga
+                  Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt
+                  Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og
+                  DATS - Dansk Amatør Teater & Scenekunst.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="zebu.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Mand Ligger Som..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">13:00</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Kill Your Darlings Hvad sker der mellem
+                  mænd når der ikke er andre til stede? Logen: Et sted hvor kun
+                  mænd er velkomne. Hvor mænd føler sig trygge, men også hvor
+                  alt er på spil, både for dem som individer og som gruppe. Et
+                  nyt medlem skal optages i logen og indvies i broderskabets
+                  fællesskab, ritualer og kutymer. Hierarki, skyld, tabu, magt
+                  og maskulinitet bliver sat på en spids i et rum, hvor alt er
+                  velkomment. Både de sarte og følsomme momenter, samt vold,
+                  druk og alt imellem. Instruktør Rasmus Kragh Hemmingsen,
+                  Medinstruktør Laura Reynberg Langkilde Kunstnerisk ledelse
+                  Josefine Münster-Swendsen, Laura Reynberg Langkilde, Rasmus
+                  Kragh Hemmingsen Skuespillere Andreas Bitsch Lucas Da Costa
+                  Jørgensen, Malthe Heiberg, Mattias Valdemar Nielsen, Niels
+                  August Garly Andersen, Rasmus Grarup Elbo, Idé Bjørn
+                  Fonnesbech, Niels August Garly Andersen, Rasmus Kragh
+                  Hemmingsen Lys/lydtekniker Rasmus Lindahl Konsulent: Mia
+                  Lomholt Tvede
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="vox.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Frygten for ikke..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">14:45</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Xenon - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af JUNOS DISCIPLE I forestillingen “Frygten
+                  for ikke at leve” stiller vi os foran det spejl, der hedder
+                  Emilie Sannom. Emilie var berømt stuntkvinde og luftakrobat i
+                  1920’ernes stumfilm. Hun var frygtløs - der var ingenting hun
+                  ikke turde. Hun var verdenskendt som filmens vovehals,
+                  mændenes overmand og luftens herskerinde. I et drømmeunivers
+                  undersøger vi mennesket uden frygt. Kan vi leve et helt liv,
+                  og aldrig blive bange? Kan vi give afkald på frygten, uden at
+                  give afkald på os selv? Hvor smal er linjen mellem drøm og
+                  mareridt? Medvirkende: Amanda Syhler, Barbara Campeotto, Xenia
+                  Winther, Anna Gohr, Kristina Freese, Christian Mondrup, Fie
+                  Schmidt og Sofie Øhrberg Lund Konsulent: Julie Mogensen.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="xenon.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Det levende rum
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">16:15</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">ZeBu</h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Spræng Danseteater. I ‘Det Levende Rum’
+                  møder vi de mennesker, der er blevet elimineret fra den
+                  utopiske verden ‘New Harmony’. De er alle syndige i at have
+                  brudt ‘New Harmony’s regler og normer for god opførsel. Sat
+                  uden for samfundet opdager de, at de er overladt til dem selv,
+                  at der ingen begrænsninger og konsekvenser er, ved at følge
+                  deres menneskelige drifter. Sproget forsvinder, og fysikken
+                  tager over. Velkommen til den store driftsfest! Medvirkende:
+                  Sarah Olivia Klitgaard, Karoline Gammelgaard Jensen , Helga
+                  Bach-Mortensen , Katrine Vedsø Jakobsen og Mollie Næss-Schmidt
+                  Konsulent: Mia Lomholt Tvede Med støtte fra: Snabslanten og
+                  DATS - Dansk Amatør Teater & Scenekunst.
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="zebu.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+
+            <tr class="table_row mb-2 flex items-center gap-4">
+              <td>
+                <img
+                  class="w-14 rounded-full"
+                  src="data:image/webp;base64,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"
+                  alt=""
+                />
+              </td>
+              <td>
+                <div class="artist w-12 text-sm font-semibold text-purple-100">
+                  Mand Ligger Som..
+                </div>
+              </td>
+              <td>
+                <div class="flex w-12 flex-col text-purple-100">
+                  <div class="time text-sm">17:30</div>
+                  <div class="text-sm font-semibold">Lørdag</div>
+                </div>
+              </td>
+              <td class="hidden">Lørdag</td>
+              <td class="w-16">
+                <h3 class="text-sm font-semibold text-purple-100">
+                  Vox - Teaterhuset
+                </h3>
+              </td>
+              <td id="pil123" class="w-10 cursor-pointer p-1 text-center">
+                <img src="./assets/arrow2.b7075e9c.svg" alt="" />
+              </td>
+            </tr>
+            <tr id="info123">
+              <th class="flex flex-col">
+                <p class="max-w-xs text-left font-light text-purple-50">
+                  En forestilling af Kill Your Darlings Hvad sker der mellem
+                  mænd når der ikke er andre til stede? Logen: Et sted hvor kun
+                  mænd er velkomne. Hvor mænd føler sig trygge, men også hvor
+                  alt er på spil, både for dem som individer og som gruppe. Et
+                  nyt medlem skal optages i logen og indvies i broderskabets
+                  fællesskab, ritualer og kutymer. Hierarki, skyld, tabu, magt
+                  og maskulinitet bliver sat på en spids i et rum, hvor alt er
+                  velkomment. Både de sarte og følsomme momenter, samt vold,
+                  druk og alt imellem. Instruktør Rasmus Kragh Hemmingsen,
+                  Medinstruktør Laura Reynberg Langkilde Kunstnerisk ledelse
+                  Josefine Münster-Swendsen, Laura Reynberg Langkilde, Rasmus
+                  Kragh Hemmingsen Skuespillere Andreas Bitsch Lucas Da Costa
+                  Jørgensen, Malthe Heiberg, Mattias Valdemar Nielsen, Niels
+                  August Garly Andersen, Rasmus Grarup Elbo, Idé Bjørn
+                  Fonnesbech, Niels August Garly Andersen, Rasmus Kragh
+                  Hemmingsen Lys/lydtekniker Rasmus Lindahl Konsulent: Mia
+                  Lomholt Tvede
+                </p>
+                <div
+                  class="infotekst_links mt-5 flex place-items-center gap-5 self-end"
+                >
+                  <div
+                    class="link flex font-bold text-slate-800 hover:text-white"
+                  >
+                    <a href="vox.html">Find vej</a>
+                  </div>
+                  <p>|</p>
+                  <button
+                    class="flex rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="køb_billet.html">
+                      Køb billet</a
+                    >
+                  </button>
+                </div>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <section class="h-96"></section>
+
+    <div class="relative ml-20 mr-20 pb-40">
+      <h2 class="mb-20 text-3xl font-bold text-white">
+        Hvordan køber man billet?
+      </h2>
+      <img class="absolute" src="./assets/step.99d6bf89.svg" alt="" />
+      <div
+        class="relative z-50 ml-8 mr-8 flex flex-col gap-32 pt-20 text-center text-black"
+      >
+        <p class="pt-2">
+          Vælg endagsbillet (120 kr.) eller partoutbillet (295 kr.)
+        </p>
+        <p class="pt-2">Læg i kurv, og fortsæt billetkøb.</p>
+        <p class="pt-4">
+          Reserver plads til alle de forestillinger du vil se (0 kr.)
+        </p>
+        <p class="pt-6">Gå til kasse og betal</p>
+      </div>
+    </div>
+
+    <footer class="relative z-50 bg-white">
+      <div
+        class="pt-20 text-center md:ml-20 md:mr-20 md:grid md:grid-cols-5 md:text-left"
+      >
+        <div class="mb-8">
+          <h3 class="mb-3 font-bold uppercase">Vildskud</h3>
+          <a href="omvildskud.html">Om Vildskud</a>
+          <h4>Privatlivspolitik</h4>
+          <h4>Cookiepolitik</h4>
+        </div>
+
+        <div class="mb-8">
+          <h3 class="mb-3 font-bold uppercase md:mr-40">Følg med</h3>
+          <div class="flex justify-center gap-4">
+            <img class="scale-150" src="./assets/facebook.b8b4bc51.svg" alt="" />
+            <img class="scale-150" src="./assets/instagram.54c960be.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <h6
+        class="md:text-big text-center text-7xl font-bold uppercase text-gray-100"
+      >
+        Vildskud
+      </h6>
+    </footer>
+
+    
+  </body>
+</html>
