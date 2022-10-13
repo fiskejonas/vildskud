@@ -13,68 +13,50 @@
         style="background-image: url(img/bg-shapes-square.svg)"
       ></div>
     </div>
-    <header>
-      <nav class="fixed top-0 left-0 z-50 w-full">
-        <div
-          class="container m-auto flex items-center justify-between text-slate-900 text-opacity-70"
-        >
-          <div class="">
-            <a href="/"
-              ><img src="./img/vildskud-logo.svg" alt="" class="h-16 py-3 pl-8"
-            /></a>
-          </div>
-          <ul
-            class="hidden cursor-pointer items-center gap-4 pr-10 text-base font-semibold md:flex"
+    <div class="logo fixed top-0 left-0 p-5">
+      <a href="index.html"
+        ><img src="./img/vildskud-logo.svg" alt="" class="h-10"
+      /></a>
+    </div>
+    <div class="relative flex flex-col text-purple-100">
+      <ul class="menu flex justify-center gap-10 pl-2 pr-2 pb-2 pt-8">
+        <li>
+          <a class="menuItem menuItem1 hover:text-slate-900" href="index.html"
+            >PROGRAM</a
           >
-            <li class="rounded py-4 px-6 hover:bg-purple-100">
-              <a href="index.html">PROGRAM</a>
-            </li>
-            <li class="rounded py-4 px-6 hover:bg-purple-100">
-              <a href="find_vej.html">FIND VEJ</a>
-            </li>
-            <li class="rounded py-4 px-6 hover:bg-purple-100">
-              <a href="index.html#hvordan_køber_man">KØB BILLETTER</a>
-            </li>
-            <li class="rounded py-4 px-6 hover:bg-purple-100">
-              <a href="frivillig.html">FRIVILLIG</a>
-            </li>
-            <li class="rounded py-4 px-6 hover:bg-purple-100">
-              <a href="opencall.html">OPENCALL</a>
-            </li>
-          </ul>
-          <button
-            class="group mx-2 block rounded py-3 px-4 hover:bg-purple-100 focus:outline-none md:hidden"
+        </li>
+        <li>
+          <a
+            class="menuItem hover:text-slate-900"
+            href="index.html#hvordan_køber_man"
+            >BILLETTER</a
           >
-            <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
-            <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
-            <div class="h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
-            <div
-              class="absolute top-0 -right-full h-screen w-8/12 bg-white opacity-0 transition-all duration-300 group-focus:right-0 group-focus:opacity-100"
-            >
-              <ul
-                class="curser-pointer flex w-full flex-col items-center pt-10 text-base"
-              >
-                <li class="w-full bg-purple-100 py-4 px-6">
-                  <a href="index.html">PROGRAM</a>
-                </li>
-                <li class="w-full py-4 px-6 hover:bg-purple-100">
-                  <a href="find_vej.html">FIND VEJ</a>
-                </li>
-                <li class="w-full py-4 px-6 hover:bg-purple-100">
-                  <a href="index.html#hvordan_køber_man">KØB BILLETTER</a>
-                </li>
-                <li class="w-full py-4 px-6 hover:bg-purple-100">
-                  <a href="frivillig.html">FRIVILLIG</a>
-                </li>
-                <li class="w-full py-4 px-6 hover:bg-purple-100">
-                  <a href="opencall.html">OPENCALL</a>
-                </li>
-              </ul>
-            </div>
-          </button>
-        </div>
-      </nav>
-    </header>
+        </li>
+        <li>
+          <a class="menuItem hover:text-slate-900" href="find_vej.html"
+            >FIND VEJ</a
+          >
+        </li>
+        <li>
+          <a class="menuItem hover:text-slate-900" href="frivillig.html"
+            >BLIV FRIVILLIG</a
+          >
+        </li>
+        <li>
+          <a class="menuItem hover:text-slate-900" href="opencall.html"
+            >OPEN CALL</a
+          >
+        </li>
+      </ul>
+      <div class="hamburger hidden">
+        <img class="closeIcon w-10" src="./img/window-close.svg" alt="" />
+        <img class="menuIcon w-10" src="./img/menu.svg" alt="" />
+      </div>
+      <!-- <button class="hamburger hidden">
+        <i class="menuIcon material-icons">MENU</i>
+        <i class="closeIcon material-icons">LUK</i>
+      </button> -->
+    </div>
     <section class="find_vej_grid relative grid place-items-center">
       <div
         class="hvor_finder_titel mt-10 mb-10 flex flex-col place-items-center"

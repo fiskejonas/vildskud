@@ -12,7 +12,108 @@ body {
     rgba(188, 40, 124, 0.773622828037465) 100%
   );
 }
+/* navigation */
 
+/* menu lille */
+@media only screen and (max-width: 700px) {
+  .hero_container {
+    margin-top: 80px;
+  }
+  .menu {
+    width: 60vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    place-items: center;
+    justify-content: flex-start;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.797);
+    color: rgba(61, 5, 61, 0.9);
+    list-style: none;
+    padding-top: 5rem;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    cursor: pointer;
+  }
+}
+
+.hamburger img {
+  opacity: 0.6;
+}
+
+.closeIcon {
+  display: none;
+  color: black;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+/* .mobile-container {
+  max-width: auto;
+  margin: auto;
+  background-color: #555;
+  height: auto;
+  color: white;
+  border-radius: 10px;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04aa6d;
+  color: white;
+}
+*/
 .cta {
   line-height: 2ch;
 }
