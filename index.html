@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <script type="module" crossorigin src="./assets/main.6237abdc.js"></script>
-    <link rel="stylesheet" href="./assets/index.35abc7d9.css">
+    <link rel="stylesheet" href="./assets/main.b4a88613.css">
   </head>
   <body class="">
     <div class="fixed top-0 h-screen w-screen bg-[#1F2E7A] blur-[70px]">
@@ -29,8 +29,14 @@
           <ul
             class="hidden cursor-pointer items-center gap-4 pr-10 text-base font-semibold md:flex"
           >
-            <li class="rounded bg-purple-100 py-4 px-6">
+            <li class="rounded py-4 px-6 hover:bg-purple-100">
               <a href="index.html">PROGRAM</a>
+            </li>
+            <li class="rounded py-4 px-6 hover:bg-purple-100">
+              <a href="find_vej.html">FIND VEJ</a>
+            </li>
+            <li class="rounded py-4 px-6 hover:bg-purple-100">
+              <a href="index.html#hvordan_køber_man">KØB BILLETTER</a>
             </li>
             <li class="rounded py-4 px-6 hover:bg-purple-100">
               <a href="frivillig.html">FRIVILLIG</a>
@@ -55,6 +61,12 @@
                   <a href="index.html">PROGRAM</a>
                 </li>
                 <li class="w-full py-4 px-6 hover:bg-purple-100">
+                  <a href="find_vej.html">FIND VEJ</a>
+                </li>
+                <li class="w-full py-4 px-6 hover:bg-purple-100">
+                  <a href="index.html#hvordan_køber_man">KØB BILLETTER</a>
+                </li>
+                <li class="w-full py-4 px-6 hover:bg-purple-100">
                   <a href="frivillig.html">FRIVILLIG</a>
                 </li>
                 <li class="w-full py-4 px-6 hover:bg-purple-100">
@@ -67,9 +79,9 @@
       </nav>
     </header>
 
-    <div class="hero_container relative mt-28 flex flex-col place-items-center">
+    <div class="hero_container relative flex flex-col place-items-center">
       <div
-        class="hero_titel mb-6 flex max-w-xs flex-col place-items-center gap-4"
+        class="hero_titel my-5 flex max-w-xs flex-col place-items-center gap-5"
       >
         <h1 class="text-center text-6xl font-bold text-purple-100">
           VILDSKUD FESTIVAL
@@ -77,7 +89,7 @@
         <h2 class="cta w-72 text-center text-2xl font-semibold text-purple-100">
           GÅ PÅ OPDAGELSE I SCENEKUNSTENS UNDERGRUND
         </h2>
-        <h4 class="hero_dato font-bold text-slate-800 text-opacity-50">
+        <h4 class="hero_dato font-bold text-slate-900 text-opacity-50">
           2.-6. august 2022
         </h4>
         <h3 class="hero_tekst text-center text-purple-100">
@@ -85,16 +97,16 @@
           klassisk teater, udendørs danseoplevelser, storytelling lysshows,
           musiske sanseoplevelser – kun fantasien sætter grænser!
         </h3>
-        <div class="flex gap-5">
+        <div class="my-5 flex gap-5">
           <button
-            class="mt-5 flex w-32 rounded bg-blue-500 py-2 px-4 text-xs font-bold text-white hover:bg-opacity-50"
+            class="flex w-32 rounded bg-blue-500 py-2 px-4 text-xs font-bold text-white hover:bg-opacity-50"
           >
-            <a class="cursor-pointer" href="sådan_køber_du.html"
+            <a class="cursor-pointer" href="#hvordan_køber_man"
               >Sådan køber du billet</a
             >
           </button>
           <button
-            class="mt-5 flex w-32 rounded bg-blue-500 py-2 px-4 text-xs font-bold text-white hover:bg-opacity-50"
+            class="flex w-32 rounded bg-blue-500 py-2 px-4 text-xs font-bold text-white hover:bg-opacity-50"
           >
             <a class="cursor-pointer" href="find_vej.html"
               >Find vej på festivalen</a
@@ -1668,28 +1680,31 @@
         </table>
       </div>
     </div>
-
-    <section class="h-96"></section>
-
-    <div class="relative ml-20 mr-20 pb-40">
-      <h2 class="mb-20 text-3xl font-bold text-white">
-        Hvordan køber man billet?
-      </h2>
-      <img class="absolute" src="./assets/step.99d6bf89.svg" alt="" />
+    <section>
       <div
-        class="relative z-50 ml-8 mr-8 flex flex-col gap-32 pt-20 text-center text-black"
+        id="hvordan_køber_man"
+        class="relative mt-10 ml-20 mr-20 flex flex-col place-items-center pb-40"
       >
-        <p class="pt-2">
-          Vælg endagsbillet (120 kr.) eller partoutbillet (295 kr.)
-        </p>
-        <p class="pt-2">Læg i kurv, og fortsæt billetkøb.</p>
-        <p class="pt-4">
-          Reserver plads til alle de forestillinger du vil se (0 kr.)
-        </p>
-        <p class="pt-6">Gå til kasse og betal</p>
+        <div class="flex w-72 flex-col">
+          <h2 class="mb-20 text-3xl font-bold text-white">
+            Hvordan køber man billet?
+          </h2>
+          <img class="absolute" src="./assets/step.99d6bf89.svg" alt="" />
+          <div
+            class="relative z-50 ml-8 mr-8 flex flex-col gap-32 pt-20 text-center text-black"
+          >
+            <p class="pt-2">
+              Vælg endagsbillet (120 kr.) eller partoutbillet (295 kr.)
+            </p>
+            <p class="pt-2">Læg i kurv, og fortsæt billetkøb.</p>
+            <p class="pt-4">
+              Reserver plads til alle de forestillinger du vil se (0 kr.)
+            </p>
+            <p class="pt-6">Gå til kasse og betal</p>
+          </div>
+        </div>
       </div>
-    </div>
-
+    </section>
     <footer class="relative z-50 bg-white">
       <div
         class="pt-20 text-center md:ml-20 md:mr-20 md:grid md:grid-cols-5 md:text-left"
