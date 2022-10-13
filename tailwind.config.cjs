@@ -8,12 +8,12 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      display: ["group-focus"],
-      opacity: ["group-focus"],
-      inset: ["group-focus"],
-    },
-  },
+  // variants: {
+  //   extend: {
+  //     display: ["group-focus"],
+  //     opacity: ["group-focus"],
+  //     inset: ["group-focus"],
+  //   },
+  // },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
