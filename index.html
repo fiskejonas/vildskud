@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <script type="module" crossorigin src="./assets/main.6237abdc.js"></script>
-    <link rel="stylesheet" href="./assets/main.b4a88613.css">
+    <link rel="stylesheet" href="./assets/main.cd18c86f.css">
   </head>
   <body class="">
-    <div class="fixed top-0 h-screen w-screen bg-[#1F2E7A] blur-[70px]">
+    <div class="fixed h-screen w-screen bg-[#1F2E7A] blur-[70px]">
       <div
-        class="absolute h-screen w-screen animate-spin-slow bg-center"
+        class="absolute right-[-50%] h-[763px] w-[763px] animate-spin-slow bg-center"
         style="background-image: url(./assets/bg-shapes-square.08afa14e.svg)"
       ></div>
     </div>
 
     <header>
-      <nav class="relative top-0 left-0 z-50 w-full">
+      <nav class="fixed top-0 left-0 z-50 w-full">
         <div
           class="container m-auto flex items-center justify-between text-slate-900 text-opacity-70"
         >
           <div class="">
             <a href="/"
-              ><img src="./assets/vildskud-logo.7c524095.svg" alt="" class="h-16 py-3 pl-8"
+              ><img src="./assets/vildskud-logo.7c524095.svg" alt="" class="h-16 py-3 pl-3"
             /></a>
           </div>
           <ul
-            class="hidden cursor-pointer items-center gap-4 pr-10 text-base font-semibold md:flex"
+            class="hidden cursor-pointer items-center gap-4 pr-2 text-base font-semibold md:flex"
           >
             <li class="rounded py-4 px-6 hover:bg-purple-100">
               <a href="index.html">PROGRAM</a>
@@ -46,7 +46,7 @@
             </li>
           </ul>
           <button
-            class="group mx-2 block rounded py-3 px-4 hover:bg-purple-100 focus:outline-none md:hidden"
+            class="group mx-1.5 block rounded py-3 px-4 hover:bg-purple-100 focus:outline-none md:hidden"
           >
             <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
             <div class="mb-1 h-1 w-5 rounded bg-slate-900 bg-opacity-70"></div>
@@ -81,7 +81,7 @@
 
     <div class="hero_container relative flex flex-col place-items-center">
       <div
-        class="hero_titel my-5 flex max-w-xs flex-col place-items-center gap-5"
+        class="hero_titel mb-8 mt-16 flex max-w-xs flex-col place-items-center gap-5"
       >
         <h1 class="text-center text-6xl font-bold text-purple-100">
           VILDSKUD FESTIVAL
@@ -1680,16 +1680,100 @@
         </table>
       </div>
     </div>
-    <section>
+    <section class="mt-14">
       <div
         id="hvordan_køber_man"
-        class="relative mt-10 ml-20 mr-20 flex flex-col place-items-center pb-40"
+        class="relative flex flex-col place-items-center pb-40"
       >
-        <div class="flex w-72 flex-col">
-          <h2 class="mb-20 text-3xl font-bold text-white">
-            Hvordan køber man billet?
-          </h2>
-          <img class="absolute" src="./assets/step.99d6bf89.svg" alt="" />
+        <div class="flex w-72 flex-col pl-5 pr-5 pb-5 shadow-2xl">
+          <div class="flex flex-col gap-5 text-slate-900">
+            <div class="køb_tekst_wrapper flex flex-col gap-5">
+              <h2 class="text-3xl font-bold text-white">
+                Hvordan køber man billet?
+              </h2>
+              <div class="flex flex-col gap-5">
+                <p class="text-lg">
+                  I købsprocessen er der to overordnede ting du skal have styr
+                  på:
+                </p>
+                <ol class="flex flex-col gap-5">
+                  <li>
+                    <span class="text-xl">1.</span> Du skal beslutte om du vil
+                    have en <span class="font-bold">partout</span> -eller en
+                    <span class="font-bold">endagsbillet</span>.
+                  </li>
+                  <li>
+                    <span class="text-xl">2.</span> Du skal
+                    <span class="font-bold">reservere plads</span> til de
+                    forestillinger du vil se.
+                  </li>
+                </ol>
+                <p class="mt-5 text-lg font-bold text-purple-200">
+                  Inde på YourTicket:
+                </p>
+              </div>
+            </div>
+            <div class="process">
+              <div class="flex flex-col gap-10">
+                <div
+                  class="koeb1 relative flex flex-col rounded-lg border-4 border-slate-800 border-opacity-80 p-5"
+                >
+                  <p>
+                    Vælg <span class="font-bold">endagsbillet</span> (120 kr.)
+                    eller <span class="font-bold">partoutbillet</span> (295 kr.)
+                  </p>
+                  <div
+                    class="1 absolute -top-5 -left-8 animate-pulse text-4xl font-bold text-purple-100"
+                  >
+                    #1
+                  </div>
+                </div>
+                <div
+                  class="koeb1 relative flex flex-col rounded-lg border-4 border-slate-800 border-opacity-80 p-5"
+                >
+                  <p>Læg i kurv, og fortsæt billetkøb.</p>
+                  <div
+                    class="1 absolute -top-5 -left-8 animate-pulse text-4xl font-bold text-purple-100"
+                  >
+                    #2
+                  </div>
+                </div>
+                <div
+                  class="koeb1 relative flex flex-col rounded-lg border-4 border-slate-800 border-opacity-80 p-5"
+                >
+                  <p>
+                    Reserver plads til alle de forestillinger du vil se (0 kr.)
+                  </p>
+                  <div
+                    class="1 absolute -top-5 -left-8 animate-pulse text-4xl font-bold text-purple-100"
+                  >
+                    #3
+                  </div>
+                </div>
+                <div
+                  class="koeb1 relative flex flex-col rounded-lg border-4 border-slate-800 border-opacity-80 p-5"
+                >
+                  <p>Gå til kasse og betal</p>
+                  <div
+                    class="1 absolute -top-5 -left-8 animate-pulse text-4xl font-bold text-purple-100"
+                  >
+                    #4
+                  </div>
+                </div>
+                <div class="koeb_knap flex flex-col">
+                  <button
+                    class="flex flex-col rounded bg-green-600 bg-opacity-80 py-2 px-4 font-bold text-white hover:bg-green-900"
+                  >
+                    <a class="cursor-pointer" href="https://www.yourticket.dk/">
+                      TA' MIG TIL BILLETSALGET!</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <img class="absolute" src="img/step.svg" alt="" />
           <div
             class="relative z-50 ml-8 mr-8 flex flex-col gap-32 pt-20 text-center text-black"
           >
@@ -1701,7 +1785,7 @@
               Reserver plads til alle de forestillinger du vil se (0 kr.)
             </p>
             <p class="pt-6">Gå til kasse og betal</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
